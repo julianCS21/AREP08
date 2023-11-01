@@ -17,8 +17,6 @@ import com.mongodb.client.MongoCursor;
 
 @ApplicationScoped
 public class PostService {
-    
-    //@Inject MongoClient mongoClient;
 
     public void savePost(Post post) {
 
@@ -33,30 +31,6 @@ public class PostService {
 
         collection.insertOne(document);
         mongoClient.close();
-    }
-
-    public String getPost(){
-        // MongoClient mongoClient = MongoClients.create("mongodb+srv://miguelsalamanca007:6skOIwdZs4YXSCuA@arep-cluster.khx5bom.mongodb.net/?retryWrites=true&w=majority");
-
-        // MongoClient mongo = new MongoClient("mongodb+srv://miguelsalamanca007:6skOIwdZs4YXSCuA@arep-cluster.khx5bom.mongodb.net", 27017);
-
-        //MongoCollection<Document> collection = mongoClient.getDatabase("arep-cluster").getCollection("posts");
-
-        /**
-        List<Document> documents = new ArrayList<>();
-
-        try (MongoCursor<Document> cursor = collection.find().limit(10).sort(Sorts.descending("date")).iterator()) {
-            while (cursor.hasNext()) {
-                documents.add(cursor.next());
-            }
-        }
-        
-        String response = documents.toString();
-
-        //mongoClient.close();
-
-        return response; */
-        return "";
     }
 
 }
