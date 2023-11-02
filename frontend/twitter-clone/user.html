@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresar a Twitter</title>
+    <link rel="stylesheet" href="userStyle.css">
+</head>
+<body>
+    <div class="twitter-login-container">
+        <h1>Ingresar a Twitter</h1>
+        <form onsubmit="redirect(event)">
+            <input type="text" placeholder="Nombre de usuario" class="username-input">
+            <button type="submit" class="ingresar-btn" id="ingresarBtn">Ingresar</button>
+        </form>
+    </div>
+    <script>
+        function redirect(event) {
+            event.preventDefault(); 
+            window.location.href = 'page.html';
+        }
+    </script>
+</body>
+</html>

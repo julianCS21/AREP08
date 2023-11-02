@@ -1,0 +1,3 @@
+org\example\model\User.class
+org\example\service\UserService.class
+org\example\controller\UserController.class
