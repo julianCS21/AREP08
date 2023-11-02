@@ -63,7 +63,7 @@ Asegurese de que el grupo de seguridad asociado a la instancia EC2 tenga las reg
 
 ## Video de la aplicación en funcionamiento
 
-[URL del video](url-del-video)
+[URL del video](https://youtu.be/TdG7VPu3vGA)
 
 ## Construido con
 
