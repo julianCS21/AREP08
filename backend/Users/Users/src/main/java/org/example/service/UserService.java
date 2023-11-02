@@ -42,7 +42,7 @@ public class UserService {
                 Document document = cursor.next();
                 User sentUser = new User("","");
                 sentUser.setUsername(document.getString("username"));
-                sentUser.setUsername(document.getString("token"));
+                sentUser.setToken(document.getString("token"));
                 users.add(sentUser);
             }
         } finally {
