@@ -50,6 +50,7 @@ Ejecutamos los contenedores
 ```
 sudo docker run -d -p 8080:8080 --name post-service --network my_network miguels007/post-service-img
 sudo docker run -d -p 8081:8080 --name posts-service --network my_network miguels007/posts-service-img
+sudo docker run -d -p 8082:8080 --name user-service --network my_network juliancs21/userservice
 sudo docker run -d -p 27017:27017 -v mongodb:/data/db -v mongodb_config:/data/configdb --name postsdb --network my_network mongo:3.6.1 mongod
 ```
 > **Advertencia**
